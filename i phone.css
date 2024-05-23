@@ -1,0 +1,131 @@
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+nav{
+    display: flex;
+    align-items: centre;
+    justify-content: space-between;
+}
+.logo a{
+    background: linear-gradient(to right,rgb(211, 47, 47),rgb(168, 2, 168),rgb(7, 255, 7),blue);
+    -webkit-background-clip:text;
+    -webkit-text-fill-color: transparent;
+    font-size: 35px;
+    font-weight: 900;
+    text-transform: uppercase;
+    margin-left: 10px;
+    top: 30%;
+    width: 140px;
+}
+
+.nav-links{
+    padding: 28px 0;
+}
+.nav-links li{
+    display: inline-block;
+    margin: 0 15px;
+}
+.nav-links li a{
+    text-decoration: none;
+    color: #fff;
+    padding: 5px 0;
+    position: relative;
+}
+.nav-links li a::after{
+    content: '';
+    background: #ff3d00;
+    width: 0;
+    height: 2px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    transition: width 0.2s;
+}
+.nav-links li a:hover::after{
+    width: 100%;
+}
+body{
+    background-color:gray;
+    background-position: relative;
+    background-size:contain;
+    width: 100%;
+    height: 100%;
+}
+h1{
+    background: linear-gradient(180deg,rgb(211, 47, 47),rgb(168, 2, 168),rgb(7, 255, 7));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-size: 30px;
+    font-weight: 700;
+    text-transform: uppercase;
+    text-align: center;
+    letter-spacing: 1px;
+    margin-bottom: 25px;
+}
+.dropdown{
+    display: none;
+    z-index: 99;
+    max-width: 7%;
+    height: auto;
+}
+.nav-links ul li:hover .dropdown{
+    display: block;
+    position: absolute;
+    background-color:rgb(0, 8, 1);
+    margin-top: 4px;
+}
+.nav-links ul li:hover .dropdown ul{
+    display:contents;
+    margin: 2px;
+}
+.nav-links ul li:hover .dropdown li{
+    width: 150px;
+    padding: 1px;
+    margin-top: 15px;
+    background: transparent;
+    border-radius: 0;    
+}
+.image-grid {
+    max-width: 79%;
+    margin: auto;
+    background: rgb(227, 223, 243);
+    overflow: auto;  
+}
+.onto{
+    margin: 5px;
+    float: left;
+    width: 390px;
+}
+.onto img {
+    width: 100%;
+    height: auto;
+    display: flex;
+}
+  .desc{
+    padding: 15px;
+    text-align: center;
+    font-weight: 500;
+    font-size: 20px;
+  }
+.onto img:hover{
+    padding-left: 3px;
+    cursor: pointer; 
+
+}
+.desc:hover{
+    color: #ff3d00; 
+    cursor: pointer; 
+}
+footer{
+    padding: 10PX;
+    font-size: 17PX;
+    font-weight: bold;
+    text-align: center;
+    background: #594848;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    letter-spacing: 1px;
+}

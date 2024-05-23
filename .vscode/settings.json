@@ -1,0 +1,7 @@
+{
+    "prettier.useTabs": true,
+    "prettier.withNodeModules": true,
+    "prettier.eslintIntegration": true,
+    "prettier.stylelintIntegration": true,
+    "prettier.tslintIntegration": true
+}

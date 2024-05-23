@@ -1,0 +1,230 @@
+*{
+   margin: 0;
+   padding:0;
+   box-sizing: border-box;
+   font-family: 'Poppins', sans-serif;
+}
+body{
+   background-image: linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6)),url(bimg/img3.jpg);
+   background-size: cover;
+   background-position: center;
+   color: aliceblue !important;
+}
+.dropdown{
+   display: none;
+   z-index: 99;
+   max-width: 7%;
+   height: auto;
+}
+.nav-links ul li:hover .dropdown{
+   display: block;
+   position: absolute;
+   background-color:rgb(0, 8, 1);
+   margin-top: 4px;
+}
+.nav-links ul li:hover .dropdown ul{
+   display:contents;
+   margin: 2px;
+}
+.nav-links ul li:hover .dropdown li{
+   width: 150px;
+   padding: 1px;
+   margin-top: 15px;
+   background: transparent;
+   border-radius: 0;    
+}
+.logo a{
+   background: linear-gradient(to right,rgb(211, 47, 47),rgb(168, 2, 168),rgb(7, 255, 7),blue);
+   -webkit-background-clip: text;
+   -webkit-text-fill-color: transparent;
+   font-size: 30px;
+   font-weight: 900;
+   text-transform: uppercase;
+   margin-top: 60px;
+   margin-left: 20px;
+}
+nav{
+   display: flex;
+   align-items: centre;
+   justify-content: space-between;
+}
+.nav-links{
+   padding: 28px 0;
+}
+.nav-links li{
+   display: inline-block;
+   margin: 0 15px;
+}
+.nav-links li a{
+   text-decoration: none;
+   color: #fff;
+   padding: 5px 0;
+   position: relative;
+}
+.nav-links li a::after{
+   content: '';
+   background: #ff3d00;
+   width: 0;
+   height: 2px;
+   position: absolute;
+   bottom: 0;
+   left: 0;
+   transition: width 0.2s;
+}
+.nav-links li a:hover::after{
+   width: 100%;
+}
+.service{
+   margin: 70px auto;
+   text-align: center;
+}
+.row{
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   text-align: center;
+   margin-left: 30px;
+   margin-bottom: 30px;
+
+}
+h1{
+   font-family: sans-serif;
+   letter-spacing: 1px;
+}
+h1::after{
+   content: '';
+   background: white;
+   display: flex;
+   width: 150px;
+   margin: 10px auto;
+   height: 3px;
+}
+h3{
+   font-size: 40px;
+   font-family: sans-serif;
+   color: rgb(127, 166, 238);
+   margin-top: 10px;
+}
+.icon{
+   font-size: 40px;
+   margin: 20px auto;
+   padding: 20px;
+   height: 80px;
+   width: 80px;
+   border: 1px solid white;
+   border-radius: 50%;
+}
+.icon i{
+   align-items: center;
+   text-align:center;
+   margin-right: 5px;
+
+}
+.col-md-3 {
+   margin-right: 10px;
+   margin-top: 5px;
+   padding: 30px;
+
+}
+.col-md-3:hover{
+   box-shadow: 5px 7px 9px -3px rgba(255,255,255,0.5);
+   cursor: pointer;
+}
+.kkk{
+   width: 80%;
+   margin:50px auto;
+}
+.contact-box{
+   background: #fff;
+   display: flex;
+}
+.contact-left{
+   flex-basis: 60%;
+   padding: 40px 60px;
+}
+.contact-right{
+   flex-basis: 40%;
+   padding: 40px;
+   background: #1c00b5;
+   color: #fff;
+}
+h4{
+   margin-bottom: 10px;
+}
+.kkk p{
+   margin-bottom:40px;
+}
+.input-row{
+   display: flex;
+   justify-content: space-between;
+   margin-bottom: 20px;
+}
+.input-row .input-group{
+   flex-basis:45%;
+}
+h5{
+   color: rgb(5, 5, 5);
+   font-size: 20px;
+   font-weight: 800;
+   margin-top: 2px;
+}
+input{
+   width: 100%;
+   border: none;
+   border-bottom: 1px solid #ccc;
+   outline: none;
+   padding-bottom: 5px;
+}
+textarea{
+   width: 100%;
+   border: 1px solid #ccc;
+   outline: none;
+   padding: 10px;
+   box-sizing: border-box;
+}
+label{
+   margin-bottom: 6px;
+   display: block;
+   color: #ff3d00;
+}
+button{
+   background: #1c00b5;
+   width: 100px;
+   border: none;
+   outline: none;
+   color: #fff;
+   height: 35px;
+   border-radius: 30px;
+   margin-top: 20px;
+}
+.contact-left h3{
+   color: #1c00b5;
+   font-weight: 600;
+   margin-bottom: 30px;
+}
+.contact-right h3{
+   font-weight: 600;
+   margin-bottom: 30px;
+ }
+ tr td{
+   padding-top: 30px;
+   color: #ccc;
+ }
+ tr td a{
+   text-decoration: none;
+   color:greenyellow;
+ }
+ tr td a:hover{
+   background-color: #ccc;
+   color: #1c00b5;
+ }
+ tr td:first-child{
+   padding-right: 20px;
+ }
+ iframe{
+   border-radius: 10px;
+   height: 100%;
+   width: 100%;
+   margin-top: 5%;
+ }
+
